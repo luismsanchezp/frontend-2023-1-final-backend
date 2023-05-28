@@ -60,7 +60,7 @@ const update = async (req, res) => {
                     const municipality = {
                         name: item.municipio,
                         code: item.c_digo_dane_del_municipio,
-                        departmentCode: item.c_digo_dane_del_departamento,
+                        stateCode: item.c_digo_dane_del_departamento,
                     };
 
                     if (

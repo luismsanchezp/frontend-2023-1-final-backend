@@ -74,7 +74,7 @@ async function store(req, res) {
             email,
             password: hash,
             role: User.roles.student,
-            active: true
+            active: true,
         })
         .save()
         .then((user) => {

@@ -47,7 +47,15 @@ const ProfileSchema = mongoose.Schema({
     },
     addresses: {
         type: [Address.schema],
-        default: [],
+        require: false,
+    },
+    city: {
+        type: String,
+        require: true,
+    },
+    state: {
+        type: String,
+        require: true,
     },
     picture: {
         type: String,

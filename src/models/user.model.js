@@ -28,14 +28,6 @@ const UserSchema = mongoose.Schema({
         type: Profile.schema,
         require: false,
     },
-    city: {
-        type: String,
-        require: true,
-    },
-    state: {
-        type: String,
-        require: true,
-    },
 }, {timestamps: true});
 
 module.exports = mongoose.model("User", UserSchema);

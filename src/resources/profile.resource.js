@@ -10,6 +10,8 @@ const profileResource = (data) => {
             govIdType: data.govIdType,
             govId: data.govId,
             phoneNumber: data.phoneNumber,
+            state: data.state,
+            city: data.city,
         };
     });
 }
