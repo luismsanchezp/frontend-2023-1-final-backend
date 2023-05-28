@@ -9,6 +9,8 @@ const userResource = (data) => {
             role: data.role,
             active: data.active,
             profile: (data.profile) ? profileResource(data.profile).data : null,
+            city: data.city,
+            state: data.state,
             createdAt: data.createdAt,
             updatedAt: data.updatedAt,
         };
